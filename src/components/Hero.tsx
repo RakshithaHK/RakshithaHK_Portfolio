@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Download, ArrowRight, Github, Linkedin, Mail, Code, Terminal, Bot, MapPin, Camera } from 'lucide-react';
+import { Sparkles, Download, ArrowRight, Github, Linkedin, Mail, Code, Terminal, Bot, MapPin } from 'lucide-react';
 import { PORTFOLIO_OWNER } from '../data/portfolioData';
 
 interface HeroProps {
@@ -69,21 +69,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
       }
     }
   }, []);
-
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const result = event.target?.result as string;
-        if (result) {
-          setExactImageSrc(result);
-          localStorage.setItem('rakshitha_exact_avatar', result);
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-  };
 
   const handleFileDrop = (e: React.DragEvent) => {
     e.preventDefault();
@@ -254,27 +239,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <img
                   src={exactImageSrc}
                   alt="Portrait of Rakshitha HK"
-                  className="w-full h-full object-cover object-[center_18%] rounded-full transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover object-[center_24%] rounded-full transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
               </div>
-
-              {/* Upload Original Photo Button Overlay on Hover */}
-              <label 
-                htmlFor="avatar-file-input"
-                className="absolute bottom-4 inset-x-0 mx-auto w-max z-20 px-3.5 py-1.5 rounded-full bg-[#10182D]/95 hover:bg-[#FF4F9A] border border-white/20 hover:border-[#FF4F9A] text-white text-[10px] font-mono font-medium flex items-center gap-1.5 shadow-lg backdrop-blur-md cursor-pointer transition-all opacity-0 group-hover:opacity-100 hover:scale-105"
-                title="Click or drag and drop to change photo"
-              >
-                <Camera className="w-3.5 h-3.5 text-[#FFB3D1]" />
-                <span>Change Photo</span>
-              </label>
-              <input 
-                id="avatar-file-input"
-                type="file" 
-                accept="image/*" 
-                onChange={handleFileUpload}
-                className="hidden" 
-              />
             </div>
 
             {/* Floating Glassmorphic UI Chips */}
