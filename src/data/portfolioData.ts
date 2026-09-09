@@ -1,4 +1,4 @@
-import cyberAvatar from '../assets/images/rakshitha_avatar_neon_1788874751016.jpg';
+import cyberAvatar from '../assets/images/rakshitha_portrait_1788874727609.jpg';
 import sakuraFan from '../assets/images/cyber_sakura_fan_1788875554639.jpg';
 import sakuraBranch from '../assets/images/sakura_branch_glow_1788864983987.jpg';
 import trafficFlowImg from '../assets/images/traffic_flow_ai_1788865004889.jpg';
@@ -74,10 +74,10 @@ export const PORTFOLIO_OWNER = {
   name: "Rakshitha HK",
   phone: "+91 8660630178",
   role: "Information Science & Engineering Student | Full-Stack & AI Developer",
-  academicStatus: "Information Science Engineering Student at SVIT (CGPA 8.87)",
-  cgpa: "8.87",
+  academicStatus: "Information Science Engineering Student at SVIT (CGPA 8.77)",
+  cgpa: "8.77",
   tagline: "Information Science Engineering student with hands-on experience across the full SDLC — building backend systems, REST APIs, full-stack web applications, and AI pipelines with an unwavering focus on code quality and debugging.",
-  summary: "Information Science Engineering student (CGPA 8.87) with hands-on experience across the full software development lifecycle: requirements, design, coding, testing, debugging, and deployment. Built and validated backend systems, REST APIs, and full-stack applications independently and in teams, with a consistent focus on code quality, edge-case handling, and root-cause debugging. Proficient in Python, Java, C, and JavaScript with working knowledge of SQL/NoSQL databases, Git-based collaborative workflows, and Agile practices.",
+  summary: "Information Science Engineering student (CGPA 8.77) with hands-on experience across the full software development lifecycle: requirements, design, coding, testing, debugging, and deployment. Built and validated backend systems, REST APIs, and full-stack applications independently and in teams, with a consistent focus on code quality, edge-case handling, and root-cause debugging. Proficient in Python, Java, C, and JavaScript with working knowledge of SQL/NoSQL databases, Git-based collaborative workflows, and Agile practices.",
   email: "rakshithahk127@gmail.com",
   github: "https://github.com/rakshithahk",
   linkedin: "https://www.linkedin.com/in/rakshitha-h-k-b1a2ba362/",
@@ -92,7 +92,7 @@ export const PORTFOLIO_OWNER = {
 };
 
 export const STATS = [
-  { value: "8.87", label: "Engineering CGPA", sub: "Department Rank Holder" },
+  { value: "8.77", label: "Engineering CGPA", sub: "Department Rank Holder" },
   { value: "93.3%", label: "Pre-University (PCMB)", sub: "Sujala PU College" },
   { value: "Full SDLC", label: "Software Engineering", sub: "Design, Test, Deploy" },
   { value: "Fest & Club", label: "Campus Leadership", sub: "Coordinator & NSS" }
@@ -280,7 +280,7 @@ export const EDUCATION: EducationItem[] = [
     degree: "Bachelor of Engineering in Information Science and Engineering",
     institution: "Sai Vidya Institute of Technology (SVIT)",
     timeline: "2023 – Present",
-    score: "CGPA: 8.87",
+    score: "CGPA: 8.77",
     status: "Department Level Rank Holder",
     description: "Rigorous engineering curriculum covering the entire software development lifecycle, core computer science principles, database design, and intelligent systems.",
     focusAreas: [
@@ -311,10 +311,10 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     id: "dept-rank",
     title: "Department Level Rank Holder",
-    award: "Rank Holder (CGPA 8.87)",
+    award: "Rank Holder (CGPA 8.77)",
     organization: "Dept. of Information Science & Engineering, SVIT",
     year: "2023 – Present",
-    description: "Maintained exceptional academic standing (CGPA 8.87) through rigorous conceptual mastery in algorithms, software systems, and engineering mathematics.",
+    description: "Maintained exceptional academic standing (CGPA 8.77) through rigorous conceptual mastery in algorithms, software systems, and engineering mathematics.",
     highlight: true
   },
   {
@@ -425,7 +425,7 @@ export const LEARNING_JOURNEY: Milestone[] = [
     year: "2024 – Present",
     title: "Department Rank & Campus Leadership",
     category: "Award",
-    description: "Recognized as Department Level Rank Holder (CGPA 8.87); served as Sanchalana Fest Coordinator, Student Placement Coordinator, and Hostel Coordinator.",
+    description: "Recognized as Department Level Rank Holder (CGPA 8.77); served as Sanchalana Fest Coordinator, Student Placement Coordinator, and Hostel Coordinator.",
     technologies: ["Leadership", "Cross-Team Coordination", "Academic Rigor"]
   }
 ];

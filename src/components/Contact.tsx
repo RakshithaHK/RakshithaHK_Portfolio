@@ -219,7 +219,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-[#FF4F9A]" />
-                  <span>Sai Vidya Institute of Technology (CGPA 8.87)</span>
+                  <span>Sai Vidya Institute of Technology (CGPA 8.77)</span>
                 </div>
               </div>
             </div>

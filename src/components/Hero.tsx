@@ -10,7 +10,7 @@ const ROTATING_PHRASES = [
   "Full-Stack & Backend Developer",
   "AI & Computer Vision Enthusiast",
   "Full SDLC • REST APIs • Edge Debugging",
-  "Department Rank Holder • CGPA 8.87",
+  "Department Rank Holder • CGPA 8.77",
   "Python • Node.js • Java • ML"
 ];
 
@@ -124,7 +124,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             <span className="w-2 h-2 rounded-full bg-[#FF4F9A] animate-pulse" />
             <span className="uppercase font-semibold">RAKSHITHA HK</span>
             <span className="text-[#7E879D]">|</span>
-            <span className="text-xs text-[#FFB3D1] font-semibold">CGPA 8.87</span>
+            <span className="text-xs text-[#FFB3D1] font-semibold">CGPA 8.77</span>
             <span className="text-[#7E879D] hidden sm:inline">•</span>
             <span className="text-xs text-[#B8C0D4] hidden sm:inline">Dept. Rank Holder</span>
           </div>
@@ -231,7 +231,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
           <div className="relative w-72 sm:w-84 md:w-96 aspect-square flex items-center justify-center">
             {/* Ambient Diffuse Backlight (blends seamlessly with background) */}
             <div 
-              className="absolute -inset-6 rounded-full bg-gradient-to-tr from-[#FF2D8D]/15 via-[#080F22]/40 to-[#FF4F9A]/15 blur-3xl pointer-events-none -z-10"
+              className="absolute -inset-5 rounded-full bg-gradient-to-tr from-[#FF2D8D]/25 via-[#080F22]/30 to-[#FF4F9A]/25 blur-3xl pointer-events-none -z-10"
             />
 
             {/* Subtle Soft Glow Shadow */}
@@ -241,31 +241,46 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
             {/* Ambient Depth Layer */}
             <div 
-              className="absolute inset-2 rounded-full bg-gradient-to-b from-transparent via-[#080F22]/20 to-[#080F22]/80 blur-2xl -z-10"
+              className="absolute inset-1 rounded-full bg-gradient-to-b from-transparent via-[#080F22]/10 to-[#080F22]/40 blur-lg -z-10"
             />
 
-            {/* Central Circular Cyber Sakura Artwork (Seamless Blended Outline) */}
+            {/* Central Circular Cyber Frame (100% Unaltered Image in Clean Circle Layout) */}
             <div 
-              className="relative w-full h-full rounded-full overflow-hidden border border-white/5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] animate-float group bg-[#080F22]/30 backdrop-blur-sm"
+              className="relative w-full h-full rounded-full overflow-hidden border-2 border-[#FF4F9A]/50 shadow-[0_0_35px_rgba(255,79,154,0.3),0_20px_50px_rgba(0,0,0,0.6)] group bg-[#080F22]/40 backdrop-blur-sm animate-float"
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleFileDrop}
             >
-              <div className="w-full h-full rounded-full overflow-hidden bg-[#080F22]/60 relative">
+              <div className="w-full h-full rounded-full overflow-hidden bg-[#080F22]/40 relative flex items-center justify-center">
                 <img
                   src={exactImageSrc}
-                  alt="Portrait of Rakshitha HK in Cyber Neon Style"
-                  className="w-full h-full object-cover object-center rounded-full transform group-hover:scale-105 transition-transform duration-700"
+                  alt="Portrait of Rakshitha HK"
+                  className="w-full h-full object-cover object-[center_18%] rounded-full transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
-                {/* Soft gradient blend on edges into background */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-t from-[#080F22]/80 via-transparent to-[#080F22]/20 pointer-events-none shadow-[inset_0_0_35px_rgba(8,15,34,0.75)]" />
               </div>
+
+              {/* Upload Original Photo Button Overlay on Hover */}
+              <label 
+                htmlFor="avatar-file-input"
+                className="absolute bottom-4 inset-x-0 mx-auto w-max z-20 px-3.5 py-1.5 rounded-full bg-[#10182D]/95 hover:bg-[#FF4F9A] border border-white/20 hover:border-[#FF4F9A] text-white text-[10px] font-mono font-medium flex items-center gap-1.5 shadow-lg backdrop-blur-md cursor-pointer transition-all opacity-0 group-hover:opacity-100 hover:scale-105"
+                title="Click or drag and drop to change photo"
+              >
+                <Camera className="w-3.5 h-3.5 text-[#FFB3D1]" />
+                <span>Change Photo</span>
+              </label>
+              <input 
+                id="avatar-file-input"
+                type="file" 
+                accept="image/*" 
+                onChange={handleFileUpload}
+                className="hidden" 
+              />
             </div>
 
             {/* Floating Glassmorphic UI Chips */}
             {/* Chip 1: Python */}
             <div 
-              className="absolute -top-3 -left-4 sm:-left-6 px-3 py-1.5 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-[#FF4F9A]/40 shadow-[0_4px_16px_rgba(0,0,0,0.4)] flex items-center gap-2 animate-float"
+              className="absolute -top-2 -left-3 sm:-left-5 px-3 py-1.5 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-[#FF4F9A]/40 shadow-[0_4px_16px_rgba(0,0,0,0.4)] flex items-center gap-2 animate-float pointer-events-none"
               style={{ animationDelay: '0.5s' }}
             >
               <span className="w-2 h-2 rounded-full bg-[#FF4F9A] shadow-[0_0_6px_#FF4F9A]" />
@@ -275,7 +290,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
             {/* Chip 2: AI & GenAI */}
             <div 
-              className="absolute top-1/4 -right-5 sm:-right-8 px-3.5 py-1.5 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-[#FF4F9A]/40 shadow-[0_4px_16px_rgba(0,0,0,0.4)] flex items-center gap-2 animate-float"
+              className="absolute top-1/4 -right-4 sm:-right-7 px-3.5 py-1.5 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-[#FF4F9A]/40 shadow-[0_4px_16px_rgba(0,0,0,0.4)] flex items-center gap-2 animate-float pointer-events-none"
               style={{ animationDelay: '1.2s' }}
             >
               <Bot className="w-3.5 h-3.5 text-[#FF4F9A]" />
@@ -284,7 +299,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
             {/* Chip 3: SVIT ISE */}
             <div 
-              className="absolute -bottom-4 -left-2 sm:-left-4 px-3.5 py-2 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-white/10 shadow-[0_8px_20px_rgba(0,0,0,0.45)] flex items-center gap-2 animate-float"
+              className="absolute -bottom-2 -left-2 sm:-left-4 px-3.5 py-2 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-white/10 shadow-[0_8px_20px_rgba(0,0,0,0.45)] flex items-center gap-2 animate-float pointer-events-none"
               style={{ animationDelay: '1.8s' }}
             >
               <Terminal className="w-3.5 h-3.5 text-[#FF6BAF]" />
@@ -296,7 +311,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
             {/* Chip 4: Web Dev */}
             <div 
-              className="absolute -bottom-2 -right-3 px-3 py-1.5 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-[#FF4F9A]/30 shadow-[0_4px_16px_rgba(0,0,0,0.4)] flex items-center gap-1.5 animate-float"
+              className="absolute -bottom-2 -right-2 px-3 py-1.5 rounded-xl bg-[#10182D]/90 backdrop-blur-md border border-[#FF4F9A]/30 shadow-[0_4px_16px_rgba(0,0,0,0.4)] flex items-center gap-1.5 animate-float pointer-events-none"
               style={{ animationDelay: '2.4s' }}
             >
               <Sparkles className="w-3 h-3 text-[#FF4F9A]" />

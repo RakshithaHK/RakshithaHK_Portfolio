@@ -31,7 +31,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Rakshitha_HK_Resume.pdf
             </span>
             <span className="text-[10px] font-mono text-[#FFB3D1] bg-[#151F36] px-2 py-0.5 rounded border border-[#FF4F9A]/30 hidden sm:inline">
-              CGPA: 8.87
+              CGPA: 8.77
             </span>
           </div>
 
@@ -113,7 +113,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Professional Summary
             </h2>
             <p className="text-xs sm:text-[13px] text-[#C4CDDE] leading-relaxed">
-              Information Science Engineering student (CGPA 8.87) with hands-on experience across the full software development lifecycle requirements, design, coding, testing, debugging, and deployment. Built and validated backend systems, REST APIs, and full-stack applications independently and in teams, with a consistent focus on code quality, edge-case handling, and root-cause debugging. Proficient in Python, Java, C, and JavaScript with working knowledge of SQL/NoSQL databases, Git-based collaborative workflows, and Agile practices. Motivated to apply strong problem solving and analytical skills to real world software challenges.
+              Information Science Engineering student (CGPA 8.77) with hands-on experience across the full software development lifecycle requirements, design, coding, testing, debugging, and deployment. Built and validated backend systems, REST APIs, and full-stack applications independently and in teams, with a consistent focus on code quality, edge-case handling, and root-cause debugging. Proficient in Python, Java, C, and JavaScript with working knowledge of SQL/NoSQL databases, Git-based collaborative workflows, and Agile practices. Motivated to apply strong problem solving and analytical skills to real world software challenges.
             </p>
           </div>
 

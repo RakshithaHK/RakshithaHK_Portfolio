@@ -76,7 +76,7 @@ export const About: React.FC = () => {
                 <span>The Developer Journey</span>
               </h3>
               <p className="text-sm text-[#B8C0D4] leading-relaxed mb-4">
-                I am an Information Science & Engineering student at SVIT (CGPA 8.87, Department Rank Holder) with hands-on experience across the entire software development lifecycle — from system design and API implementation to edge-case handling, unit testing, and deployment.
+                I am an Information Science & Engineering student at SVIT (CGPA 8.77, Department Rank Holder) with hands-on experience across the entire software development lifecycle — from system design and API implementation to edge-case handling, unit testing, and deployment.
               </p>
               <p className="text-sm text-[#B8C0D4] leading-relaxed">
                 Whether architecting RESTful services in Node.js and Flask, writing parameterized MySQL queries to guard against vulnerabilities, or fine-tuning YOLO computer vision models, I prioritize code quality, root-cause debugging, and collaborative Git workflows.
